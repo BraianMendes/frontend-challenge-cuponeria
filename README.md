@@ -1,44 +1,75 @@
-# ![Cuponeria Pig](https://camo.githubusercontent.com/6f8483710048fe836d3e5d61b6af4290c55aff3901e36963181429ed996bc425/68747470733a2f2f6d656469612e6375706f6e657269612e636f6d2e62722f6375706f6e65726961342f696d6167656e732f696c7573747261636f65732f657874656e73616f2f706f727175696e686f2d6865726f692d657874656e73616f2e676966) Frontend Developer Test - Cuponeria
+# Cuponeria Store for Frontend Challenge
 
-This test aims to test the candidate's knowledge regarding the technologies used by the **Cuponeria Frontend Developer Team**.
+Project developed for the frontend challenge using React.js with Typescript, consuming data from the api Fake Store, unit tests with Jest and demonstration of a design system and integration of tests with Storybook.
 
-## References 
 
-- [Layout no Figma](https://www.figma.com/file/CjWJWkhU0eYmwVlUaPs4A0/Cuponeria-Frontend-Challenge?node-id=0%3A1)
-- [API - Fake Store](https://fakestoreapi.com/)
+## Overview
 
-## Instructions
+The project was built trying to be as close and accurate to the request in the Figma file. For styling, CSS-in-JS was used with the styled-components, two pages were built, one for Index and one for Detail, and 3 main reusable components: FeaturedCard, ProductCard and MenuItem.
 
-- Fork this repository.
-- Create your own version of this repository, with README instructions and documentation.
-- Commit your workflow, you can check this [article](https://medium.com/@rafael.oliveira/como-escrever-boas-mensagens-de-commit-9f8fe852155a).
-- After you're done, send a pull request to the original repository.
+It was used for grid layout pages, and for components, flexbox layout. In another scope, tools would be used to prototype faster like the bootstrap, which in this case would be the reactrsap, or else material-ui or others.
 
-### Skills Required
+<div style="display: flex">
+    <img src="./readme_assets/intro.png" width="100%"/>
+</div>
 
-- HTML;
-- CSS;
-- Javascript;
-- ReactJS;
-- Responsive layouts.
+## Getting Started
 
-### Optional Skills (will earn more points if it's correct or lose otherwise)
+How to Install and Start
+   -  Clone the project to your device with: ```git clone https://github.com/BraianMendes/frontend-challenge-cuponeria.git```
+    -   Navigate into the repository with: ```cd frontend-challenge-cuponeria```
+    -  Install the project's dependencies with your package manager preferably with: ``` npm install ``` or ``` yarn install```
+    - Once installed, you can run the project in your development environment with: ``` npm start ``` or ``` yarn start```
+    - The project will run at the door: http://localhost:3000/
 
-- Typescript;
-- CSS IN JS;
-- Unit Tests;
-- Storybook;
+How to test
+   -  You can do unit tests of the project with: ```npm run test``` or ```yarn test```
+    -   Inside your command terminal you can see Jest doing the tests and printing the results.
 
-### Project Checklist (we will check it all 👀)
+How open Storybook
 
-- [ ] You have to use [React Js](https://pt-br.reactjs.org/)	as your framework.
-- [ ] The Product Cards, Featured Cards and Menu Itens must be Reusable Components.
-- [ ] You have to use Grid Layout for the structure of the pages.
-- [ ] You have to use Flexbox for the Components.
-- [ ] All content needs to be consumed through the [Fake Store API](https://fakestoreapi.com/).
-- [ ] The app must be responsive for Web and Mobile but have to look good on all breakpoints like mobile, tablets, laptops, desktops widescreen and desktops ultrawidescreen.
-- [ ] Can we see your UI/UX skills? Surprise us with your best, you can change the layout theme schema the way you want, and please, add microinterations but without using external libs.
-- [ ] Don't repeat yourself. Elements that are logically related must be changed predictably and uniformly and must be sync.
+   -  You can start the Storybook using: ```npm run storybook``` or ```yarn storybook```
+    -   It will then generate a new Storybook-specific frontend where you can track and work with the components, at the door: http://localhost:6006/
 
-### GLHF (Good Luck and Have Fun!)
+## About Storybook
 
+This tool is essential for the development of a design system for your project or groups of projects of the same entity. There you can view the rendering of each component, in some cases even their behavior within a page or between them. And yet it allows integration of unit tests, snapshot tests, visual tests and more, all integrated with the CI. Allowing: to monitor the evolution of components from commit to commit, how they interact with each other, possible variations and how to use them. It also allows a non-developer designer to follow the visual tests, monitor their approval within the CI, much more visual and friendly tests and a more complete control of their frontend applications.
+
+In our exercise it was applied to the 3 main components: FeaturedCard, ProductCard and MenuItem. And it allows you to see its rendering and some variations of the components.
+
+<div style="display: flex">
+    <img src="./readme_assets/storybook.png" width="100%"/>
+</div>
+
+## About Testing
+
+The tests can be of the most varied, guaranteeing the quality and correct execution of our code, in addition to improving maintenance and more.
+
+In our exercise unit tests were applied through Jest, which is a JavaScript testing framework designed to ensure correctness of any JavaScript codebase.
+
+It was used integrated with the Storybook, taking advantage of the components it renders and testing as a proof of concept without having gone into all its possibilities. Storybook snapshot tests have also been added.
+
+With this integration it would be possible to do more in-depth CI using visual tests with tools already prepared for Storybook partners, and implement together our own unit tests and others.
+
+<div style="display: flex">
+    <img src="./readme_assets/testing.png" width="100%"/>
+</div>
+
+## Components diagrams
+
+Below you can follow the simple architecture used to orchestrate the components and views / pages.
+
+```mermaid
+graph LR
+A[FeaturedCard]  --> D{IndexPage}
+B --> F{DetailPage}
+C[MenuItem] --> E((header))
+B[ProductCard] --> D
+E --> D
+E --> F
+
+```
+
+## Final considerations
+
+Thank you very much for watching so far and for the opportunity. I am open to all conversations, doubts and whatever else you want. I hope to see you in a new stage.

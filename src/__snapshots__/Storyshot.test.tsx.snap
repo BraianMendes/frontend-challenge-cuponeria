@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Storybook/FeaturedCard Default 1`] = `
+<div
+  className="sc-bdfBwQ fvYAMv slide"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <div>
+      <img
+        alt=""
+        src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+      />
+      <span>
+        <p>
+          $ 
+          15.99
+        </p>
+      </span>
+    </div>
+  </a>
+  <div>
+    <p>
+      Mens Casual Slim Fit
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Storybook/Loader Default 1`] = `
+<div
+  className="sc-gsTCUz kpASZt"
+>
+  <div
+    className="loading-container"
+  >
+    <div
+      className="loader"
+    >
+      <div
+        className="loading-spinning-bubbles"
+      >
+        <div
+          className="bubble-container"
+        >
+          <div
+            className="bubble"
+          />
+        </div>
+        <div
+          className="bubble-container"
+        >
+          <div
+            className="bubble"
+          />
+        </div>
+        <div
+          className="bubble-container"
+        >
+          <div
+            className="bubble"
+          />
+        </div>
+        <div
+          className="bubble-container"
+        >
+          <div
+            className="bubble"
+          />
+        </div>
+        <div
+          className="bubble-container"
+        >
+          <div
+            className="bubble"
+          />
+        </div>
+        <div
+          className="bubble-container"
+        >
+          <div
+            className="bubble"
+          />
+        </div>
+        <div
+          className="bubble-container"
+        >
+          <div
+            className="bubble"
+          />
+        </div>
+        <div
+          className="bubble-container"
+        >
+          <div
+            className="bubble"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Storybook/MenuItem Detail 1`] = `
+<button
+  className="sc-dlfnbm eIIxRa"
+  onClick={[Function]}
+  selected={false}
+>
+  <svg
+    aria-hidden="true"
+    className="svg-inline--fa fa-arrow-left fa-w-14 "
+    data-icon="arrow-left"
+    data-prefix="fas"
+    focusable="false"
+    role="img"
+    style={
+      Object {
+        "marginRight": 15,
+      }
+    }
+    viewBox="0 0 448 512"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
+      fill="currentColor"
+      style={Object {}}
+    />
+  </svg>
+  VOLTAR
+</button>
+`;
+
+exports[`Storyshots Storybook/MenuItem Selected 1`] = `
+<button
+  className="sc-dlfnbm eIIxRa"
+  onClick={[Function]}
+  selected={true}
+>
+  
+  Default
+</button>
+`;
+
+exports[`Storyshots Storybook/MenuItem Unselected 1`] = `
+<button
+  className="sc-dlfnbm jXdBZV"
+  onClick={[Function]}
+  selected={false}
+>
+  
+  Default
+</button>
+`;
+
+exports[`Storyshots Storybook/ProductCard Detail 1`] = `
+<div
+  className="sc-hKgILt dycGvs"
+>
+  <div
+    className="imgContainer"
+  >
+    <img
+      alt=""
+      src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+    />
+  </div>
+  <div>
+    <div>
+      <p>
+        Mens Casual Slim Fit
+      </p>
+      <div>
+        <span>
+          R$ 
+          15.99
+        </span>
+      </div>
+    </div>
+    <div>
+      <p>
+        The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Storybook/ProductCard Discover 1`] = `
+<div
+  className="sc-hKgILt ihAzyX"
+>
+  <div
+    className="imgContainer"
+  >
+    <img
+      alt=""
+      src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+    />
+  </div>
+  <div>
+    <div>
+      <p>
+        Mens Casual Slim Fit...
+      </p>
+      <div>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <span>
+            SHOP
+          </span>
+        </a>
+      </div>
+    </div>
+    <div>
+      <p>
+        The color could be slightly different between on the screen and in practice. / Please note...
+      </p>
+    </div>
+  </div>
+</div>
+`;
